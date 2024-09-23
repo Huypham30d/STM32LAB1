@@ -1,0 +1,8 @@
+exercise2.c:15:6:init_ex2	8	static
+exercise2.c:20:6:led_red_on	8	static
+exercise2.c:23:6:led_red_off	8	static
+exercise2.c:26:6:led_green_on	8	static
+exercise2.c:29:6:led_green_off	8	static
+exercise2.c:32:6:led_yellow_on	8	static
+exercise2.c:35:6:led_yellow_off	8	static
+exercise2.c:38:6:ex2_run	8	static
