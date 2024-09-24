@@ -117,9 +117,46 @@ void ex10_run(){
 //hour = hour%12;
 //min = min%5;
 //sec = sec%5
+	//begin sec_condition
 	if (sec_count >= 60){
-
+		//check sec truoc co bi trung k
+		if ((sec_count/5-1) != (min_count/5) && (sec_count/5-1) != (hour_count) ){
+			clearNumberOnClock(sec_count/5-1);
+		}
+		min_count++;
+		sec_count = 0;
 	}
+	if ((sec_count/5-1) != (min_count/5) && (sec_count/5-1) != (hour_count) ){
+		clearNumberOnClock(sec_count/5-1);
+	}
+	setNumberOnClock(sec_count/5);
+	sec_count++;
+	//end sec_condition
 
+	//begin min_condition
+	if (min_count >= 60){
+		if ((min_count/5 - 1) != sec_count/5 && (min_count/5 - 1) != hour_count){
+			clearNumberOnClock(min_count/5-1);
+		}
+		hour_count++;
+		min_count = 0;
+	}
+	if (min_count/5 - 1 != sec_count/5 && min_count/5 - 1 != hour_count){
+		clearNumberOnClock(min_count/5-1);
+	}
+	setNumberOnClock(min_count/5);
+	//end min_condition
+
+	//begin hour_condition
+	if(hour_count >=12){
+		if(((hour_count-1) != (min_count/5))&& ((hour_count-1) != (sec_count/5))){
+			clearNumberOnClock(hour_count-1);
+		}
+		hour_count = 0;
+	}
+	if(((hour_count-1) != (min_count/5))&& ((hour_count-1) != (sec_count/5))){
+		clearNumberOnClock(hour_count-1);
+	}
+	setNumberOnClock(hour_count);
 }
 
