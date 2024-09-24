@@ -109,8 +109,17 @@ void clearAllClock(){
 void init_ex10(){
 	clearAllClock();
 }
+//counter
+int hour_count = 0;
+int min_count = 0;
+int sec_count = 0;
 void ex10_run(){
+//hour = hour%12;
+//min = min%5;
+//sec = sec%5
+	if (sec_count >= 60){
 
+	}
 
 }
 

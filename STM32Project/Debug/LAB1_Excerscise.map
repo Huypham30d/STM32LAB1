@@ -76,10 +76,16 @@ Discarded input sections
                 0x0000000000000000       0x94 ./Core/Src/exercise10.o
  .text.init_ex10
                 0x0000000000000000        0xc ./Core/Src/exercise10.o
+ .bss.hour_count
+                0x0000000000000000        0x4 ./Core/Src/exercise10.o
+ .bss.min_count
+                0x0000000000000000        0x4 ./Core/Src/exercise10.o
+ .bss.sec_count
+                0x0000000000000000        0x4 ./Core/Src/exercise10.o
  .text.ex10_run
                 0x0000000000000000        0xc ./Core/Src/exercise10.o
- .debug_info    0x0000000000000000      0x2ab ./Core/Src/exercise10.o
- .debug_abbrev  0x0000000000000000      0x155 ./Core/Src/exercise10.o
+ .debug_info    0x0000000000000000      0x2e1 ./Core/Src/exercise10.o
+ .debug_abbrev  0x0000000000000000      0x168 ./Core/Src/exercise10.o
  .debug_aranges
                 0x0000000000000000       0x40 ./Core/Src/exercise10.o
  .debug_ranges  0x0000000000000000       0x30 ./Core/Src/exercise10.o
@@ -120,7 +126,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/exercise10.o
  .debug_macro   0x0000000000000000       0x94 ./Core/Src/exercise10.o
  .debug_line    0x0000000000000000      0x6d4 ./Core/Src/exercise10.o
- .debug_str     0x0000000000000000    0x78c40 ./Core/Src/exercise10.o
+ .debug_str     0x0000000000000000    0x78c5f ./Core/Src/exercise10.o
  .comment       0x0000000000000000       0x54 ./Core/Src/exercise10.o
  .debug_frame   0x0000000000000000       0xb0 ./Core/Src/exercise10.o
  .ARM.attributes
